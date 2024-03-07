@@ -431,6 +431,77 @@ header .navbar nav ul li:hover a {
 .slide h3 {
   font-size: 30px;
 }
+.blog {
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+.blog .container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+}
+.blog .grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  place-items: center;
+}
+.blog .container .grid .item {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
+}
+.blog .container .grid .item .img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 15px;
+}
+.blog .container .grid .item .i-1 {
+  background-image: url("https://images.unsplash.com/photo-1707343845208-a20c56d2c8ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8");
+}
+.blog .container .grid .item .i-2 {
+  background-image: url("https://plus.unsplash.com/premium_photo-1699560434018-df96100f74b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D");
+}
+.blog .container .grid .item .img.i-3 {
+  background-image: url("https://images.unsplash.com/photo-1694505029737-33ad1aa334b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzN3x8fGVufDB8fHx8fA%3D%3D");
+}
+.blog .container .grid .item .description {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.blog .container .grid .item .description p {
+  color: #555;
+}
+.blog .container .grid .item .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog .container .grid .item .footer .footer-img {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.blog .container .grid .item .footer-img img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.blog .container .grid .item .footer span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #555;
+}
 @keyframes slide {
   20% {
     margin-left: 0px;
@@ -532,6 +603,15 @@ header .navbar nav ul li:hover a {
   #slideshow {
     display: none;
   }
+  .blog .container {
+    width: 100%;
+  }
+  .blog .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog .grid .item {
+    max-width: 600px;
+  }
 }
 
 @media screen and (min-width: 779px) and (max-width: 1300px) {
@@ -571,5 +651,14 @@ header .navbar nav ul li:hover a {
   }
   .portfolio .container .grid .item {
     max-width: 500px;
+  }
+  .blog .container {
+    width: 90%;
+  }
+  .blog .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog .grid .item {
+    max-width: 600px;
   }
 }
