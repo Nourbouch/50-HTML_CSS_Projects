@@ -25,9 +25,9 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#status">Status</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#status">Status</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -109,7 +109,14 @@
     <!-- End about me page  -->
 
     <!-- Start services page  -->
-    <section class="services">
+    <section class="services" id="services">
+      <div class="title" style="text-align: center">
+        <h2 style="font-size: 40px; margin: 30px auto 10px">Services</h2>
+        <p style="color: #555; margin-bottom: 10px">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+          nobis?
+        </p>
+      </div>
       <div class="container">
         <div class="grid">
           <div class="items">
@@ -215,20 +222,103 @@
         </div>
       </div>
     </section>
+    <!-- End status company  -->
+    <!-- Start portfolio page -->
+    <section class="portfolio" id="portfolio">
+      <div class="title" style="text-align: center">
+        <h2 style="font-size: 40px; margin: 30px auto 10px">Portfolio</h2>
+        <p style="color: #555; margin-bottom: 50px">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+          nobis?
+        </p>
+      </div>
+      <div class="container">
+        <div class="grid">
+          <div class="item">
+            <div class="img i-1"></div>
+            <div class="description">
+              <div class="date">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p><span>Web Desgin</span> / 18 Sep, 2018</p>
+              </div>
+              <div class="add">
+                <span><i class="fa fa-plus"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img i-2"></div>
+            <div class="description">
+              <div class="date">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p><span>Web Desgin</span> / 18 Sep, 2018</p>
+              </div>
+              <div class="add">
+                <span><i class="fa fa-plus"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img i-3"></div>
+            <div class="description">
+              <div class="date">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p><span>Web Desgin</span> / 18 Sep, 2018</p>
+              </div>
+              <div class="add">
+                <span><i class="fa fa-plus"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img i-4"></div>
+            <div class="description">
+              <div class="date">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p><span>Web Desgin</span> / 18 Sep, 2018</p>
+              </div>
+              <div class="add">
+                <span><i class="fa fa-plus"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img i-5"></div>
+            <div class="description">
+              <div class="date">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p><span>Web Desgin</span> / 18 Sep, 2018</p>
+              </div>
+              <div class="add">
+                <span><i class="fa fa-plus"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img i-6"></div>
+            <div class="description">
+              <div class="date">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p><span>Web Desgin</span> / 18 Sep, 2018</p>
+              </div>
+              <div class="add">
+                <span><i class="fa fa-plus"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script>
       const burger = document.querySelector(".burger");
       const ul = burger.nextElementSibling;
-
       const handleUlDisplay = () => {
         ul.style.display = window.innerWidth > 778 ? "flex" : "none";
       };
-
       window.addEventListener("resize", handleUlDisplay);
-
       burger.addEventListener("click", () => {
         ul.style.display = ul.style.display === "block" ? "none" : "block";
       });
-
       handleUlDisplay(); // Initial setup
     </script>
   </body>
