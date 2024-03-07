@@ -5,6 +5,7 @@
   font-family: sans-serif;
   list-style-type: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 header {
   background-position: center;
@@ -96,6 +97,98 @@ header .navbar nav ul li:hover a {
   background-color: rgb(61, 61, 61);
   transition: 0.3s;
 }
+.about {
+  background-color: #eee;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+}
+.about .container {
+  width: 80%;
+  border-radius: 20px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  box-shadow: 0 0px 12px rgba(0, 0, 0, 0.185);
+  gap: 40px;
+}
+.about .container .skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  width: 50%;
+}
+.about .container .skills .description {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.about .container .skills .description .info {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  word-wrap: break-word;
+}
+.about .container .skills .skills-info {
+  margin-top: 20px;
+}
+.about .container .skills .skills-chart {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.about .container .skills .skills-chart div p:last-child {
+  width: 100%;
+  background-color: rgb(151, 152, 207);
+  height: 20px;
+  margin-top: 10px;
+}
+.about .container .skills .skills-chart div.h p:last-child span {
+  width: 85%;
+  background-color: rgb(89, 91, 211);
+  height: 20px;
+  display: inline-block;
+}
+.about .container .skills .skills-chart div.c p:last-child span {
+  width: 75%;
+  background-color: rgb(89, 91, 211);
+  height: 20px;
+  display: inline-block;
+}
+.about .container .skills .skills-chart div.p p:last-child span {
+  width: 50%;
+  background-color: rgb(89, 91, 211);
+  height: 20px;
+  display: inline-block;
+}
+.about .container .skills .skills-chart div.j p:last-child span {
+  width: 90%;
+  background-color: rgb(89, 91, 211);
+  height: 20px;
+  display: inline-block;
+}
+.about .container .about-description {
+  width: 50%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.about .container .about-description h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 255, 0.507);
+  text-decoration-thickness: 5px;
+}
+.about .container .about-description p {
+  width: 90%;
+  font-size: 18px;
+  color: #555;
+}
+
 @media screen and (max-width: 753px) {
   header .navbar nav {
     flex-direction: column;
@@ -126,5 +219,44 @@ header .navbar nav ul li:hover a {
 
   .home .container h1 {
     font-size: 2em;
+  }
+  .about {
+    padding: 10px;
+  }
+  .about .container {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .about .container .skills,
+  .about .container .about-description {
+    width: 100%;
+    padding: 10px;
+  }
+  .about .container .skills .info {
+    font-size: 14px;
+  }
+  .about .container .about-description p {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 754px) and (max-width: 1260px) {
+  .about {
+    padding: 20px;
+  }
+  .about .container {
+    min-width: 700px;
+    width: 70%;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .about .container .skills,
+  .about .container .about-description {
+    width: 100%;
+  }
+  .about .container .about-description p {
+    width: 80%;
   }
 }
