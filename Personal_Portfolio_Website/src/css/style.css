@@ -320,14 +320,14 @@ header .navbar nav ul li:hover a {
   gap: 10px;
   padding-bottom: 10px;
   width: 100%;
-  max-width: 450px;
+  max-width: 400px;
 }
 .portfolio .container .grid .item .img {
   width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
+  height: 200px;
 }
 .portfolio .container .grid .item .description {
   display: flex;
@@ -379,6 +379,82 @@ header .navbar nav ul li:hover a {
 .portfolio .container .grid .item .i-6 {
   background-image: url("https://images.unsplash.com/photo-1560088032-d21fe602f4bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGhpbmdzfGVufDB8fDB8fHww");
 }
+.reviews {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1709603945846-6901ed447ecd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8");
+}
+.reviews::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#slideshow {
+  text-align: center;
+  overflow: hidden;
+  height: 410px;
+  width: 728px;
+  margin: 0 auto;
+}
+.slide-wrapper {
+  width: 2912px;
+  animation: slide 10s ease infinite;
+}
+
+.slide {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 410px;
+  width: 728px;
+}
+.slide img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+.slide h3 {
+  font-size: 30px;
+}
+@keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -728px;
+  }
+  50% {
+    margin-left: -728px;
+  }
+  60% {
+    margin-left: -1456px;
+  }
+  70% {
+    margin-left: -1456px;
+  }
+  80% {
+    margin-left: -2184px;
+  }
+  90% {
+    margin-left: -2184px;
+  }
+}
+
 @media screen and (max-width: 778px) {
   header .navbar nav {
     flex-direction: column;
@@ -445,7 +521,16 @@ header .navbar nav ul li:hover a {
     width: 100%;
   }
   .portfolio .container .grid {
+    padding: 0;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio .container .grid .item {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  #slideshow {
+    display: none;
   }
 }
 
@@ -485,6 +570,6 @@ header .navbar nav ul li:hover a {
     grid-template-columns: repeat(2, 1fr);
   }
   .portfolio .container .grid .item {
-    max-width: 400px;
+    max-width: 500px;
   }
 }
