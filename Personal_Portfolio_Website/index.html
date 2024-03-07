@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="icon" href="src/img/icon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>Mush Website</title>
   </head>
   <body>
@@ -104,12 +108,84 @@
     <!-- End about me page  -->
 
     <!-- Start services page  -->
+    <section class="services">
+      <div class="container">
+        <div class="grid">
+          <div class="items">
+            <p class="icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </p>
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <div class="items">
+            <p class="icon">
+              <i class="fa-solid fa-bars-progress"></i>
+            </p>
+            <h3>Web Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <div class="items">
+            <p class="icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </p>
+            <h3>Photography</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <div class="items">
+            <p class="icon">
+              <i class="fa-solid fa-binoculars"></i>
+            </p>
+            <h3>Responsive Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <div class="items">
+            <p class="icon">
+              <i class="fa-regular fa-sun"></i>
+            </p>
+            <h3>Graphic Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <div class="items">
+            <p class="icon">
+              <i class="fa-solid fa-tachograph-digital"></i>
+            </p>
+            <h3>Marketing Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script>
       const burger = document.querySelector(".burger");
       const ul = burger.nextElementSibling;
 
       const handleUlDisplay = () => {
-        ul.style.display = window.innerWidth > 753 ? "flex" : "none";
+        ul.style.display = window.innerWidth > 778 ? "flex" : "none";
       };
 
       window.addEventListener("resize", handleUlDisplay);

@@ -98,19 +98,20 @@ header .navbar nav ul li:hover a {
   transition: 0.3s;
 }
 .about {
-  background-color: #eee;
+  background-color: #eeeeee6b;
   display: grid;
   place-items: center;
   padding: 30px;
 }
 .about .container {
-  width: 80%;
+  width: 70%;
   border-radius: 20px;
   margin: 40px auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 40px;
+  padding: 80px 30px;
+  background-color: white;
   box-shadow: 0 0px 12px rgba(0, 0, 0, 0.185);
   gap: 40px;
 }
@@ -185,11 +186,61 @@ header .navbar nav ul li:hover a {
 }
 .about .container .about-description p {
   width: 90%;
-  font-size: 18px;
+  font-size: 19px;
   color: #555;
 }
 
-@media screen and (max-width: 753px) {
+.services {
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+}
+.services .container {
+  width: 80%;
+}
+.services .container .grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+.services .container .grid .items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+  gap: 20px;
+  text-align: center;
+}
+.services .container .grid .items .icon {
+  font-size: 40px;
+  width: 100px;
+  color: rgb(0, 102, 255);
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.199);
+  display: grid;
+  place-items: center;
+  height: 100px;
+}
+.services .container .grid .items .icon:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 255, 0.5);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.services .container .grid .items p {
+  color: #555;
+  line-height: 1.5;
+}
+.services .container .grid .items h3 {
+  font-size: 25px;
+}
+@media screen and (max-width: 778px) {
   header .navbar nav {
     flex-direction: column;
     align-items: flex-start;
@@ -240,9 +291,16 @@ header .navbar nav ul li:hover a {
     width: 100%;
     font-size: 16px;
   }
+  .services .container {
+    width: 100% !important;
+  }
+  .services .container .grid {
+    padding: 5px !important;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-@media screen and (min-width: 754px) and (max-width: 1260px) {
+@media screen and (min-width: 779px) and (max-width: 1300px) {
   .about {
     padding: 20px;
   }
@@ -258,5 +316,13 @@ header .navbar nav ul li:hover a {
   }
   .about .container .about-description p {
     width: 80%;
+  }
+  .services .container {
+    width: 90% !important;
+  }
+  .services .container .grid {
+    padding: 10px !important;
+
+    grid-template-columns: repeat(2, 1fr);
   }
 }
