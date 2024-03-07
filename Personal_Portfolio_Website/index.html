@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="icon" href="src/img/icon.ico" />
+    <title>Mush Website</title>
+  </head>
+  <body>
+    <!-- Start header page  -->
+    <header>
+      <div class="navbar">
+        <nav>
+          <h2 class="logo">Mush <span>Ws</span></h2>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="home">
+        <div class="container">
+          <h1>I am Mush Baderman</h1>
+          <p>Freelancer | Desginer | Developer</p>
+          <div class="btn">
+            <a href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script>
+      const burger = document.querySelector(".burger");
+      const ul = burger.nextElementSibling;
+
+      const handleUlDisplay = () => {
+        ul.style.display = window.innerWidth > 753 ? "flex" : "none";
+      };
+
+      window.addEventListener("resize", handleUlDisplay);
+
+      burger.addEventListener("click", () => {
+        ul.style.display = ul.style.display === "block" ? "none" : "block";
+      });
+
+      handleUlDisplay(); // Initial setup
+    </script>
+  </body>
+</html>
