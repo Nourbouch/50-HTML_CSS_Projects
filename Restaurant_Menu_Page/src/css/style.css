@@ -50,3 +50,137 @@ ul li a {
 ul li a:hover {
   text-decoration: underline;
 }
+.welcome {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+.welcome h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.welcome .title {
+  margin: 40px 0;
+}
+.welcome p {
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 700px;
+  width: 100%;
+  color: #555;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.food-showcase {
+  margin: 0 0 20px 0;
+}
+.food-showcase .filter-food {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  gap: 20px;
+}
+.food-showcase .filter-food button {
+  border: none;
+  font-weight: bold;
+  background-color: #ce6e51;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  max-width: 150px;
+  font-size: 20px;
+  text-align: center;
+}
+.food-showcase .filter-food button:hover {
+  background-color: white;
+  color: #555;
+  transition: 0.3s;
+  box-shadow: 0 0 4px black;
+}
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  place-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.food-item {
+  width: 100%;
+  display: flex;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px #ddd;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  overflow: hidden;
+}
+.food-grid .food-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.food-grid .food-item img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.food-item h3 {
+  font-size: 20px;
+}
+.food-item p.title {
+  font-size: 15px;
+  color: #555;
+}
+.food-item p.price {
+  font-size: 25px;
+  color: #ce6e51;
+}
+@media screen and (max-width: 768px) {
+  header {
+    align-items: flex-start;
+  }
+  header nav {
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+  }
+  nav h2 {
+    font-size: 24px;
+  }
+  ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .welcome {
+    width: 90%;
+  }
+  .welcome h1 {
+    font-size: 25px;
+  }
+  .welcome p {
+    width: 100%;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .food-grid {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .food-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
