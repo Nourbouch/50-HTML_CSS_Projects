@@ -144,7 +144,7 @@ ul li a:hover {
   color: #ce6e51;
 }
 .random-fact {
-  margin: 100px 0;
+  margin: 100px 0 30px;
 }
 .random {
   width: 80%;
@@ -166,7 +166,6 @@ ul li a:hover {
   width: 50%;
   font-size: 20px;
   line-height: 1.6;
-  max-height: 400px;
   margin: 0 0 20px 0;
 }
 .random button {
