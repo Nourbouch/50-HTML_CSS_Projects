@@ -143,6 +143,44 @@ ul li a:hover {
   font-size: 25px;
   color: #ce6e51;
 }
+.random-fact {
+  margin: 100px 0;
+}
+.random {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+.random img {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.329);
+}
+.random .d {
+  color: #555;
+  width: 50%;
+  font-size: 20px;
+  line-height: 1.6;
+  max-height: 400px;
+  margin: 0 0 20px 0;
+}
+.random button {
+  border: none;
+  font-weight: bold;
+  background-color: #ce6e51;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  max-width: 150px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
 @media screen and (max-width: 768px) {
   header {
     align-items: flex-start;
@@ -177,10 +215,31 @@ ul li a:hover {
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
   }
+  .random {
+    width: 90%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .d {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .food-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .random {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .random .d {
+    width: 80%;
+    max-width: 80%;
   }
 }
