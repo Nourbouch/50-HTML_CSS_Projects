@@ -10,7 +10,7 @@ Explore the projects below:
 
 1. [Personal Portfolio Website](Personal_Portfolio_Website)
 2. [Restaurant Menu Page](Restaurant_Menu_Page)
-3. [Product Landing Page](Product_Landing_Page)
+3. [Product landing_page](Product_landing_page)
 4. [Blog Homepage](Blog_Homepage)
 5. [Weather App Interface](Weather_App_Interface)
 6. [Online Resume/CV](Online_Resume_CV)
