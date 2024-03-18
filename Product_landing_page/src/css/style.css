@@ -85,6 +85,48 @@
 
 }
 
+.overview{
+  padding: 20px;
+  min-height: 50vh;
+  background:url("https://demo.templatesjungle.com/luxury/images/pattern-bg.png") no-repeat center/cover;
+  display: grid;
+  place-items:center;
+}
+.overview .container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.overview .container div{
+  padding: 20px;
+  display: flex;
+  margin: 30px auto;
+  flex-direction:column;
+  gap:20px;
+}
+.overview .container div h2{
+  font-size: 50px;
+  color:#777;
+  font-family:serif;
+}
+.overview .container div p{
+  font-size: 22px;
+  font-family:serif;
+  line-height: 1.5;
+  color:#777;
+}
+.overview .container div:last-child ul{
+  display: flex;
+  flex-direction: column;
+  gap:14px;
+  font-size: 18px;
+  color:#777;
+}
+.overview ul li b{
+  color:#555;
+}
 /* RESPONSIVE */
 @media screen and (max-width: 838px) {
   .navbar nav {
@@ -112,5 +154,22 @@
   .home a {
     margin: 20px auto;
   }
+ 
 }
-
+@media screen and (max-width:1400px){
+   .overview .container{
+    flex-direction: column;
+    gap:0px
+  }
+  .overview .container div{
+    margin: 0 !important;
+    gap:10px
+  }
+  .overview .container div h2{
+    font-size: 30px;
+  }
+  .overview .container div p{
+    width: 100%;
+    font-size: 18px;
+  }
+}
