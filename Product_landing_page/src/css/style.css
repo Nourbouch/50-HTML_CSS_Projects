@@ -264,6 +264,48 @@
   width: 100%;
   height: 300px;
 }
+.fuqs{
+ min-height: 80vh;
+ display:grid;
+ place-items:center;
+}
+.fuqs .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto
+}
+.description{
+  width: 100%;
+}
+.fuqs .container .description h2{
+  font-size: 50px;
+  text-align:center;
+}
+.fuqs .container .description .content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width:600px;
+  margin: 0 auto;
+  gap:20px;
+  align-items:flex-start;
+}
+.description .content p {
+  margin-top: 40px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color:#444;
+  padding-bottom: 10px;
+  border-bottom: 2px  solid #ddd;
+  width: 100%;
+}
+.description p span{
+  cursor: pointer;
+}
 /* RESPONSIVE */
 @media screen and (max-width:1400px){
    .overview .container{
@@ -279,7 +321,7 @@
     font-size: 30px;
   }
   .overview .container div p{
-    width: 100%;
+    wiCan I replace the watch strap?dth: 100%;
     font-size: 18px;
   }
 
@@ -370,6 +412,12 @@
  }
  .product h2{
    font-size: 30px;
+ }
+ .description .content{
+   max-width: 100%;
+ }
+ .description .content p{
+   font-size: 16px;
  }
 }
 
